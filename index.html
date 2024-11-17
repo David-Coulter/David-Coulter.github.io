@@ -14,6 +14,9 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- AOS (Animate on Scroll) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,9 +42,9 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">David Coulter</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Architecting Innovative Solutions in Software Development</h2>
-                        <a class="btn btn-primary" href="#about">Learn More</a>
+                        <h1 class="mx-auto my-0 text-uppercase" data-aos="fade-down">David Coulter</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5" data-aos="fade-up" data-aos-delay="200">Architecting Innovative Solutions in Software Development</h2>
+                        <a class="btn btn-primary" href="#about" data-aos="fade-up" data-aos-delay="400">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -51,23 +54,23 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Hi, Im David Coulter</h2>
-                        <img class="img-fluid" src="assets/img/profile.png" alt="..." width="500" height="500" />
-                        <p class="text-white-50" style="margin-top: 2px; margin-bottom: 10px;">
-                            I am a software engineer with a vibrant background that spans from military training/testing, surveillance/intelligence, and logistics. After many different careers, trying to find my path in this life, I am thrilled to finally be a part of the world of software engineering, which has always been my true passion.
-                        </p>
-                        
-                        <p class="text-white-50" style="margin-bottom: 10px;">
-                            I’m currently juggling life as a devoted father, a loving husband, and a grad student at the University of Arizona, where I’m pursuing a Master’s in Software Engineering. My academic journey builds on the B.S. in Systems Engineering that I earned in 2023.
-                        </p>
-                        
-                        <p class="text-white-50" style="margin-bottom: 10px;">
-                            My career has been a wild ride through various roles—think of it as a diverse playlist of experiences! I’ve picked up a lot of valuable skills along the way. I’m well-versed in C++, Java, Python, and Agile methodologies, and I thrive on solving complex problems and collaborating with diverse teams.
-                        </p>
-                        
-                        <p class="text-white-50" style="margin-bottom: 10px;">
-                            When I’m not coding or studying, you can find me enjoying time with my family, our two dogs, and dreaming about the next big tech project. I’m passionate about using technology to make a difference and am excited about what’s ahead.
-                        </p>
+                        <h2 class="text-white mb-4" data-aos="fade-right">Hi, I'm David Coulter</h2>
+                            <img class="img-fluid" src="assets/img/profile.png" alt="..." width="500" height="500" data-aos="zoom-in" />
+                            <p class="text-white-50" data-aos="fade-up">
+                                <img class="img-fluid" src="assets/img/profile.png" alt="..." width="500" height="500" />
+                                    <p class="text-white-50" style="margin-top: 2px; margin-bottom: 10px;">
+                                        I am a software engineer with a vibrant background that spans from military training/testing, surveillance/intelligence, and logistics. After many different careers, trying to find my path in this life, I am thrilled to finally be a part of the world of software engineering, which has always been my true passion.
+                                    </p>
+                                    <p class="text-white-50" style="margin-bottom: 10px;">
+                                        I’m currently juggling life as a devoted father, a loving husband, and a grad student at the University of Arizona, where I’m pursuing a Master’s in Software Engineering. My academic journey builds on the B.S. in Systems Engineering that I earned in 2023.
+                                    </p>
+                                    <p class="text-white-50" style="margin-bottom: 10px;">
+                                        My career has been a wild ride through various roles—think of it as a diverse playlist of experiences! I’ve picked up a lot of valuable skills along the way. I’m well-versed in C++, Java, Python, and Agile methodologies, and I thrive on solving complex problems and collaborating with diverse teams.
+                                    </p>
+                                    <p class="text-white-50" style="margin-bottom: 10px;">
+                                        When I’m not coding or studying, you can find me enjoying time with my family, our two dogs, and dreaming about the next big tech project. I’m passionate about using technology to make a difference and am excited about what’s ahead.
+                                    </p>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -75,12 +78,12 @@
         <!-- Experience -->
         <section class="experience-section text-center" id="experience">
             <div class="container px-4 px-lg-5 section-container">
-                <h1 style="color: #64a19d; display: flex; justify-content: center;">Experience</h1>
+                <h1 style="color: #64a19d; display: flex; justify-content: center;" data-aos="fade-down">Experience</h1>
                 <div class="row gx-0">
-                    <div class="col-lg-6 p-0">
+                    <div class="col-lg-6 p-0" data-aos="fade-right">
                         <img class="img-fluid" src="assets/img/image-03.png" alt="..." />
                     </div>
-                    <div class="col-lg-6 p-0">
+                    <div class="col-lg-6 p-0" data-aos="fade-left">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -116,7 +119,12 @@
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5 section-container">
-                <h1 style="color: #64a19d; display: flex; justify-content: center;">Projects</h1>
+                <h1 style="color: #64a19d; display: flex; justify-content: center;" data-aos="fade-down">Projects</h1>
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <!-- Your existing iframe -->
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6">
@@ -206,7 +214,7 @@
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0" data-aos="flip-left" data-aos-delay="100">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
@@ -216,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0" data-aos="flip-left" data-aos-delay="200">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
@@ -227,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
+                <div class="social d-flex justify-content-center" data-aos="fade-up">
                     <!-- <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a> -->
                     <!-- <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a> -->
                     <a class="mx-2" href="https://www.linkedin.com/in/david-coulter2/"><i class="fab fa-linkedin-in"></i></a>
@@ -246,5 +254,12 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            AOS.init({
+              duration: 1000,
+              once: true,
+              offset: 100
+            });
+          </script>
     </body>
 </html>
