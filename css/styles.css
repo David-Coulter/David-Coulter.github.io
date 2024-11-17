@@ -604,6 +604,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-bottom: 0rem;
 }
 
 .img-thumbnail {
@@ -11133,6 +11134,16 @@ body {
   margin-bottom: 5rem;
 }
 
+.about-section img {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.about-section p:first-of-type {
+  margin-top: 0;
+}
+
 .experience-section {
   padding-top: 3rem;
   width: 100%;
@@ -11265,10 +11276,6 @@ iframe {
 .project:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-.about-section img {
-  animation: float 6s ease-in-out infinite;
 }
 
 .social a {
