@@ -11115,7 +11115,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 3rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -11123,7 +11123,7 @@ body {
 }
 
 .experience-section {
-  padding-top: 12rem;
+  padding-top: 3rem;
   width: 100%;
 }
 .experience-section .featured-text {
@@ -11150,7 +11150,7 @@ iframe {
 }
 
 .projects-section {
-  padding-top: 12rem;
+  padding-top: 3rem;
   padding-bottom: 10rem;
   width: 100%;
 }
@@ -11174,7 +11174,7 @@ iframe {
 }
 
 .signup-section {
-  padding: 10rem 0;
+  padding: 3rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -11193,7 +11193,7 @@ iframe {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .contact-section .card {
   border: 0;
@@ -11212,7 +11212,7 @@ iframe {
   width: 3rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .contact-section .social a {
   text-align: center;
@@ -11231,5 +11231,5 @@ iframe {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
