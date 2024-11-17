@@ -51,13 +51,38 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Navbar animation
+        gsap.from("#mainNav", {
+            duration: 1,
+            y: -100,
+            opacity: 0,
+            ease: "power4.out"
+        });
+
+        // Animate sections on scroll
+        gsap.utils.toArray('.project').forEach(project => {
+            gsap.from(project, {
+                scrollTrigger: {
+                    trigger: project,
+                    start: "top center+=100",
+                    toggleActions: "play none none reverse"
+                },
+                opacity: 0,
+                y: 100,
+                duration: 1,
+                ease: "power4.out"
+            });
+        });
+    });
 
 });

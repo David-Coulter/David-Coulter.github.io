@@ -11069,7 +11069,7 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
@@ -11077,20 +11077,31 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  text-align: center;
 }
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  font-size: 4.0rem;
+  line-height: 4.0rem;
+  letter-spacing: .4rem;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+          margin-bottom: 1rem;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
 }
 .masthead h2, .masthead .h2 {
-  max-width: 20rem;
+  max-width: 50rem;
   font-size: 1rem;
+  margin: 0 auto;  
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
@@ -11232,4 +11243,69 @@ iframe {
 
 .footer {
   padding: 3rem 0;
+}
+
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes shine {
+  from {
+      background-position: 200% center;
+  }
+}
+
+.project {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.about-section img {
+  animation: float 6s ease-in-out infinite;
+}
+
+.social a {
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  transform: translateY(-5px) scale(1.1);
+  filter: brightness(1.2);
+}
+
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0.2;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }

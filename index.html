@@ -14,9 +14,16 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- AOS (Animate on Scroll) -->
+        <!-- AOS (Animate On Scroll) -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- GSAP (GreenSock Animation Platform) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+        <!-- Animate.css for additional animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,8 +49,8 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase" data-aos="fade-down">David Coulter</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5" data-aos="fade-up" data-aos-delay="200">Architecting Innovative Solutions in Software Development</h2>
+                        <h1 class="animate__animated animate__fadeInDown">David Coulter</h1>
+                        <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Architecting Innovative Solutions in Software Development</h2>
                         <a class="btn btn-primary" href="#about" data-aos="fade-up" data-aos-delay="400">Learn More</a>
                     </div>
                 </div>
@@ -54,8 +61,8 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4" data-aos="fade-right">Hi, I'm David Coulter</h2>
-                            <img class="img-fluid" src="assets/img/profile.png" alt="..." width="500" height="500" data-aos="zoom-in" />
+                        <h2 data-aos="fade-down" style="color: white;"> Hi, I'm David Coulter</h2>
+                        <img class="img-fluid" src="assets/img/profile.png" alt="David Coulter" width="400" height="400" />
                             <p class="text-white-50" data-aos="fade-up">
                                     <p class="text-white-50" style="margin-top: 2px; margin-bottom: 10px;">
                                         I am a software engineer with a vibrant background that spans from military training/testing, surveillance/intelligence, and logistics. After many different careers, trying to find my path in this life, I am thrilled to finally be a part of the world of software engineering, which has always been my true passion.
@@ -78,11 +85,11 @@
         <section class="experience-section text-center" id="experience">
             <div class="container px-4 px-lg-5 section-container">
                 <h1 style="color: #64a19d; display: flex; justify-content: center;" data-aos="fade-down">Experience</h1>
-                <div class="row gx-0">
-                    <div class="col-lg-6 p-0" data-aos="fade-right">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <img class="img-fluid" src="assets/img/image-03.png" alt="..." />
                     </div>
-                    <div class="col-lg-6 p-0" data-aos="fade-left">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -118,42 +125,44 @@
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5 section-container">
-                <h1 style="color: #64a19d; display: flex; justify-content: center;" data-aos="fade-down">Projects</h1>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <iframe class="img-fluid w-100 h-200" src="https://www.youtube.com/embed/HI_F2cAVAaU" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Water Predictive Analysis Program</h4>
-                                    <p class="mb-0 text-white-50">Designed and implemented a predictive analysis program using machine learning algorithms with TensorFlow for the Bard Water District to increase their efficiency by at least 5%.</p>
-                                    <p class="mb-0 text-white-50">Developed a web application using HTML, CSS, JavaScript, and Python, enabling BWD to place weekly water orders. </p>
-                                    <p class="mb-0 text-white-50">Collaborated with farmers, scientists, and water district engineers to gather requirements and establish a software development plan, resulting in improved accuracy of water order predictions over time.</p>
+                <div class="project" data-aos="flip-left" data-aos-duration="1000"></div>
+                    <h1 style="color: #64a19d; display: flex; justify-content: center;" data-aos="fade-down">Projects</h1>
+                    <!-- Project One Row-->
+                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <iframe class="img-fluid w-100 h-200" src="https://www.youtube.com/embed/HI_F2cAVAaU" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="bg-black text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                        <h4 class="text-white">Water Predictive Analysis Program</h4>
+                                        <p class="mb-0 text-white-50">Designed and implemented a predictive analysis program using machine learning algorithms with TensorFlow for the Bard Water District to increase their efficiency by at least 5%.</p>
+                                        <p class="mb-0 text-white-50">Developed a web application using HTML, CSS, JavaScript, and Python, enabling BWD to place weekly water orders. </p>
+                                        <p class="mb-0 text-white-50">Collaborated with farmers, scientists, and water district engineers to gather requirements and establish a software development plan, resulting in improved accuracy of water order predictions over time.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <iframe class="img-fluid w-100 h-200" src="https://www.youtube.com/embed/pK2xMXEZQpA" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-lg-6 order-lg-first" data-aos="fade-left">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Software Engineering Interactive Display</h4>
-                                    <p class="mb-0 text-white-50">Designed and implemented interactive touchscreen display software program using Java in a team of 4 members. </p>
-                                    <p class="mb-0 text-white-50">Collaborated with professors and IT professionals to gather requirements and establish a software development plan. </p>
-                                    <p class="mb-0 text-white-50">Utilized Java Swing to create multiple user interfaces and GIT for real-time collaboration with team members. </p>
-                                    <a href="https://github.com/David-Coulter/SFWE_Touchscreen_Display" target="_blank">
-                                        <img src="https://github.com/favicon.ico" alt="GitHub Repository" style="width: 40px; height: 40px; margin-left: 10px;" />
-                                    </a>
+                    <!-- Project Two Row-->
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <iframe class="img-fluid w-100 h-200" src="https://www.youtube.com/embed/pK2xMXEZQpA" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 order-lg-first" data-aos="fade-left">
+                            <div class="bg-black text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h4 class="text-white">Software Engineering Interactive Display</h4>
+                                        <p class="mb-0 text-white-50">Designed and implemented interactive touchscreen display software program using Java in a team of 4 members. </p>
+                                        <p class="mb-0 text-white-50">Collaborated with professors and IT professionals to gather requirements and establish a software development plan. </p>
+                                        <p class="mb-0 text-white-50">Utilized Java Swing to create multiple user interfaces and GIT for real-time collaboration with team members. </p>
+                                        <a href="https://github.com/David-Coulter/SFWE_Touchscreen_Display" target="_blank">
+                                            <img src="https://github.com/favicon.ico" alt="GitHub Repository" style="width: 40px; height: 40px; margin-left: 10px;" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -250,10 +259,44 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
+            // Initialize AOS
             AOS.init({
-              duration: 1000,
-              once: true,
-              offset: 100
+                duration: 1000,
+                once: true,
+                mirror: false,
+                offset: 100
+            });
+
+            // GSAP Animations
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Masthead animations
+            gsap.from(".masthead h1", {
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: "power4.out"
+            });
+
+            gsap.from(".masthead h2", {
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                delay: 0.5,
+                ease: "power4.out"
+            });
+
+            // Animate profile image
+            gsap.from(".about-section img", {
+                scrollTrigger: {
+                    trigger: ".about-section",
+                    start: "top center",
+                },
+                duration: 1,
+                scale: 0.5,
+                opacity: 0,
+                rotation: 10,
+                ease: "back.out(1.7)"
             });
           </script>
     </body>
