@@ -11194,6 +11194,10 @@ iframe {
     padding: 5rem;
   }
 }
+.projects-section iframe {
+  height: 100% !important;
+  min-height: 300px; 
+}
 
 .signup-section {
   padding: 3rem 0;
